@@ -33,15 +33,7 @@
                             <li><a class=" dropdown-item text-center" href="{{ route('pengguna') }}" style="font-size: 13px;">List Pengguna</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" style="font-size: 15px;">Login</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item text-center" href="{{ route('admin') }}" style="font-size: 13px;">Admin</a></li>
-                            <li><a class="dropdown-item text-center" href="{{ route('pembina') }}" style="font-size: 13px;">Pembina</a></li>
-                            <li><a class="dropdown-item text-center" href="{{ route('ketua') }}" style="font-size: 13px;">Ketua</a></li>
-                            <li><a class="dropdown-item text-center" href="{{ route('user') }}" style="font-size: 13px;">User</a></li>
-                        </ul>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="{{ route('login') }}" style="font-size: 15px;">Login</a></li>
                 </ul>
             </div>
         </div>
@@ -88,65 +80,50 @@
     {{-- END SLIDE --}}
 
 
-    {{-- CARD --}}
+   {{-- CARD --}}
 <div class="container mb-5">
     <div class="card mx-auto custom-card">
-        <h3 class="card-title fw-semibold text-center">list Semua Pengguna</h3> <hr>
-                <form class="row g-3">
-                    <div class="col-md-4">
-                      <label for="inputEmail4" class="form-label">Nama Extrakulikuler</label>
-                      <input type="email" class="form-control" id="inputEmail4" placeholder="Isi Nama Extrakulikuler">
-                    </div>
-                    <div class="col-md-4">
-                        <label for="inputState" class="form-label">Pembina</label>
-                        <select id="inputState" class="form-select">
-                          <option selected>Nama Pembina...</option>
-                          <option>Mutiara Cinta Nurul Islami</option>
-                        </select>
-                      </div>
-                    <div class="col-md-4">
-                        <label for="inputState" class="form-label">Ketua</label>
-                        <select id="inputState" class="form-select">
-                          <option selected>Nama Ketua...</option>
-                          <option>Pajar Azmi Anugraha</option>
-                        </select>
-                      </div>
-                    <div class="col-md-5">
-                      <label for="inputEmail4" class="form-label">Jadwal Extrakulikuler</label>
-                      <input type="email" class="form-control" id="inputEmail4" placeholder="isi Jadwal Extrakulikuler">
-                    </div>
-                    <div class="col-md-7">
-                      <label for="inputPassword4" class="form-label">Tentang Extrakulikuler</label>
-                      <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 100px"></textarea>
-                    </div>
-                    <div class="col-12">
-                      <button type="submit" class="btn btn-primary">Sign in</button>
-                    </div>
-                </form>
+        <h3 class="card-title fw-semibold text-center">List Semua Eskul</h3> <hr>
+        <table class="table table-bordered table-hover ">
+            <thead class="table-dark text-center ">
+            <tr >
+              <th>No</th>
+              <th>Nama Lengkap</th>
+              <th>Nama Pengguna</th>
+              <th>Eskul</th>
+              <th>Role</th>
+              <th>aksi</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>1</td>
+              <td>budi sutomo</td>
+              <td>budi</td>
+              <td>pramuka</td>
+              <td>pembina</td>
+              <td>
+                <a href="#">Edit</a>
+                <a href="#">Hapus</a>
+            </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Azmi Naufal</td>
+              <td>Azmi</td>
+              <td>Jurnalis</td>
+              <td>Ketua</td>
+              <td>
+                <a href="#">Edit</a>
+                <a href="#">Hapus</a>
+            </td>
+            </tr>
+            </tbody>
+          </table>
         </div>
     </div>
 </div>
 {{-- END CARD --}}
-
-{{-- <div class="container mb-5">
-    <div class="card mx-auto custom-card text-center">
-        <div class="mx-auto mb-4 mt-2">
-            <img src="{{ asset('storage/img/logo.png') }}" alt="" >
-        </div>
-        <h2 class="card-title mb-5">Selamat Datang di Sistem Informasi Eskul SMKN 1 Kawali</h2>
-        <div class="card text-bg-light mb-3">
-            <div class="card-body d-flex flex-column flex-md-row align-items-center text-center text-md-start mb-5 mt-5 ">
-                <img src="{{ asset('storage/img/photo.jpg') }}" alt="" style="width: 220px; height: 120px; border-radius: 5px;" class="mb-3  mb-md-0 me-md-5">
-                <div class="artikel ">
-                    <h5 class="card-title">Visi</h5>
-                    <p class="card-text">Terwujudnya lulusan yang berakhlak mulia, unggul, profesional, mandiri dan berdaya saing global pada tahun 2026.</p>
-                    <h5 class="card-title">Misi</h5>
-                    <p class="card-text">Meningkatkan kerjasama kemitraan, penyerapan lulusan dengan IDUKA, perguruan tinggi, dan lembaga pemerintahan serta membangun jiwa wirausaha yang tangguh dan mandiri. Meningkatkan kualitas SDM, menyediakan sarana dan prasarana yang berkualitas, dan menyajikan proses pembelajaran bermutu, menuju link and match dengan IDUKA.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> --}}
 
     <footer class="bg-dark text-light py-4">
         <div class="container text-center">

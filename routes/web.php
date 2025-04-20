@@ -1,10 +1,16 @@
 <?php
 
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\Pembina\PembinaController;
 use App\Http\Controllers\Ketua\KetuaController;
 use Illuminate\Support\Facades\Route;
+
+
+//login
+Route::get('login', [LoginController::class, 'login'])->name('login');
+Route::post('/login', [LoginController::class, 'login_action'])->name('login_action');
 
 //route admin
 Route::get('admin', [AdminController::class, 'index'])->name('admin');

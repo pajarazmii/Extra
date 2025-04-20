@@ -20,15 +20,7 @@
                 <ul class="navbar-nav ms-auto ">
                     <li class="nav-item"><a class="nav-link active" href="{{ route('user') }}" style="font-size: 15px;">Beranda</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ route('list.eskul') }}" style="font-size: 15px;">Eskul</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" style="font-size: 15px;">Login</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item text-center" href="{{ route('admin') }}" style="font-size: 13px;">Admin</a></li>
-                            <li><a class="dropdown-item text-center" href="{{ route('pembina') }}" style="font-size: 13px;">Pembina</a></li>
-                            <li><a class="dropdown-item text-center" href="{{ route('ketua') }}" style="font-size: 13px;">Ketua</a></li>
-                            <li><a class="dropdown-item text-center" href="{{ route('user') }}" style="font-size: 13px;">User</a></li>
-                        </ul>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="{{ route('login') }}" style="font-size: 15px;">Login</a></li>
                 </ul>
             </div>
         </div>
@@ -77,7 +69,7 @@
 {{-- CARD --}}
     <div class="container mb-5">
         <div class="card mx-auto custom-card text-center">
-            <h2 class="card-title mb-5">Sistem Informasi Eskul SMKN 1 Kawali</h2>
+            <h2 class="card-title mb-5">Halaman Pembina</h2>
             <div class="card text-bg-light mb-3">
                 <div class="card-body d-flex flex-column flex-md-row align-items-center text-center text-md-start mb-5 mt-5 ">
                     <img src="{{ asset('storage/img/photo.jpg') }}" alt="" style="width: 220px; height: 120px; border-radius: 5px;" class="mb-3  mb-md-0 me-md-5">

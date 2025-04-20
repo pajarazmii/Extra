@@ -77,7 +77,7 @@
 {{-- CARD --}}
     <div class="container mb-5">
         <div class="card mx-auto custom-card text-center">
-            <h2 class="card-title mb-5">Selamat Datang di Eskul SMKN 1 Kawali</h2>
+            <h2 class="card-title mb-5">Halaman Ketua</h2>
             <div class="card text-bg-light mb-3">
                 <div class="card-body d-flex flex-column flex-md-row align-items-center text-center text-md-start mb-5 mt-5 ">
                     <img src="{{ asset('storage/img/photo.jpg') }}" alt="" style="width: 220px; height: 120px; border-radius: 5px;" class="mb-3  mb-md-0 me-md-5">

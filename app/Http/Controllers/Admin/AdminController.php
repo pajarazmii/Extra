@@ -17,8 +17,7 @@ class AdminController extends Controller
     }
     public function eskul()
     {
-        $eskul = eskul::all();
-        return view('Admin.Eskul.index', compact('eskul'));
+        return view('Admin.Eskul.index');
     }
     public function pengguna()
     {
