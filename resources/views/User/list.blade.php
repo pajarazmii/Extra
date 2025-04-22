@@ -67,22 +67,35 @@
     {{-- END SLIDE --}}
 
 {{-- CARD --}}
-    <div class="container mb-5">
-        <div class="card mx-auto custom-card text-center">
-            <h2 class="card-title mb-5">Selamat Datang di Sistem Informasi Eskul SMKN 1 Kawali</h2>
-            <div class="card text-bg-light mb-3">
-                <div class="card-body d-flex flex-column flex-md-row align-items-center text-center text-md-start mb-5 mt-5 ">
-                    <img src="{{ asset('storage/img/photo.jpg') }}" alt="" style="width: 220px; height: 120px; border-radius: 5px;" class="mb-3  mb-md-0 me-md-5">
-                    <div class="artikel ">
-                        <h5 class="card-title">Visi</h5>
-                        <p class="card-text">Terwujudnya lulusan yang berakhlak mulia, unggul, profesional, mandiri dan berdaya saing global pada tahun 2026.</p>
-                        <h5 class="card-title">Misi</h5>
-                        <p class="card-text">Meningkatkan kerjasama kemitraan, penyerapan lulusan dengan IDUKA, perguruan tinggi, dan lembaga pemerintahan serta membangun jiwa wirausaha yang tangguh dan mandiri. Meningkatkan kualitas SDM, menyediakan sarana dan prasarana yang berkualitas, dan menyajikan proses pembelajaran bermutu, menuju link and match dengan IDUKA.</p>
-                    </div>
-                </div>
+<div class="container mb-5">
+    <div class="card mx-auto custom-card text-center">
+        
+        <h2>daftar extra</h2>
+        <div class="cardd d-flex justify-content-between">
+        <div class="card" style="width: 18rem;">
+            <img src="{{ asset('storage/img/logo.png') }}" class="card-img-top rounded mx-auto d-block mt-4" alt="...">
+            <div class="card-body">
+              <h3 class="card-text">batminton</h3>
+              <p> tes</p>
             </div>
+          </div>
+        <div class="card" style="width: 18rem;">
+            <img src="{{ asset('storage/img/logo.png') }}" class="card-img-top rounded mx-auto d-block" alt="...">
+            <div class="card-body">
+              <h3 class="card-text">batminton</h3>
+              <p> tes</p>
+            </div>
+          </div>
+        <div class="card" style="width: 18rem;">
+            <img src="{{ asset('storage/img/logo.png') }}" class="card-img-top rounded mx-auto d-block" alt="...">
+            <div class="card-body">
+              <h3 class="card-text">batminton</h3>
+              <p> tes</p>
+            </div>
+          </div>
         </div>
     </div>
+</div>
 {{-- END CARD --}}
 
     <footer class="bg-dark text-light py-4">

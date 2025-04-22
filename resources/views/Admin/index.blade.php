@@ -36,7 +36,8 @@
                             <li><a class="dropdown-item text-center" href="{{ route('pengguna') }}" style="font-size: 13px;">List Pengguna</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="{{ route('login') }}" style="font-size: 15px;">Login</a></li>
+
+
                 </ul>
             </div>
         </div>

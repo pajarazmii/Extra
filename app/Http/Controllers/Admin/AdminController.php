@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 use App\Models\eskul;
+use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
@@ -30,7 +31,8 @@ class AdminController extends Controller
      */
     public function create_eskul()
     {
-        return view('Admin.Eskul.create');
+        $eskul = eskul::all();
+        return view('Admin.Eskul.create', compact('eskul'));
     }
 
     public function create_pengguna()
@@ -45,24 +47,27 @@ class AdminController extends Controller
     {
                 // Validasi data input
         $request->validate([
-            'nama_eskul' => 'required|string|max:255',
-            'id_pembina' => 'required|email|unique:students,email',
-            'id_ketua' => 'required|integer|min:1',
-            'jadwal' => 'required|integer|min:1',
-            'tentang' => 'required|integer|min:1',
+            'nama_eskul' => 'required',
+            'nama_pembina' => 'required|exists:pembina,id',
+            'nama_ketua' => 'required|exists:ketua,id',
+            'jadwal' => 'required',
+            'tentang' => 'required',
         ]);
 
         // Simpan data ke database
-        $student = new eskul();
-        $student->name = $request->name;
-        $student->email = $request->email;
-        $student->age = $request->age;
-        $student->save();
+        $register = new eskul([
+            'nama_eskul' => $request->nama_eskul,
+            'nama_pembina' => $request->nama_pembina,
+            'nama_ketua' => $request->nama_ketua,
+            'jadwal' => $request->jadwal,
+            'tentang' => $request->tentang     
+        ]);
 
-        // Redirect dengan pesan sukses
-        return redirect()->back()->with('success', 'Data siswa berhasil ditambahkan!');
+        $register->save();
+
+        return redirect('/Admin/Eskul/index');
     }
-
+    
     /**
      * Display the specified resource.
      */
